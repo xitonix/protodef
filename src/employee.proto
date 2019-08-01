@@ -1,0 +1,10 @@
+syntax = "proto3";
+package contracts;
+option go_package = "contracts";
+
+import "common/person.proto";
+
+message Employee {
+    common.Person person = 1;
+    string department = 2;
+}
